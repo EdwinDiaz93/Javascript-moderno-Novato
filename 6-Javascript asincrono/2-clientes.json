@@ -1,0 +1,20 @@
+[
+    {
+        "id":1,
+        "nombre":"Edwin Diaz",
+        "compañia":"Consultores Sa de Cv",
+        "telefono":"444-555-6666"
+    },
+    {
+        "id":2,
+        "nombre":"Jose Pineda",
+        "compañia":"Diseños Cad Sa de Cv",
+        "telefono":"111-222-3333"
+    },
+    {
+        "id":3,
+        "nombre":"Manuel Argueta",
+        "compañia":"Diseños Cad Sa de Cv",
+        "telefono":"123-456-7777"
+    }
+]
