@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de libros</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <style>
+        .success,.error{
+            color: white;
+            padding: 5px;
+            margin: 5px 0px 15px 0px;
+        }
+        .success{
+            background:green ;
+        }
+        .error{
+            background: red;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h3>Añadir libro</h3>
+    <form id="formulario-libro">
+        <div>
+            <label for="titulo">Titulo</label>
+            <input type="text" id="titulo" class="u-full-width">
+        </div>
+        <div>
+            <label for="autor">Autor</label>
+            <input type="text" id="autor" class="u-full-width">
+        </div>
+        <div>
+            <label for="isbn">ISBN#</label>
+            <input type="text" id="isbn" class="u-full-width">
+        </div>
+        <div>
+            <input type="submit" value="Añadir" class="u-full-width">
+        </div>
+    </form>
+    
+    
+    <table class="u-full-width">
+        <thead>
+            <tr>
+                <th>Titulo</th>
+                <th>Autor</th>
+                <th>ISBN</th>
+                <th></th>            
+            </tr>
+        </thead>
+        <tbody id="lista-libros">
+            
+        </tbody>
+    </table>
+    
+</div>
+    <script src="appes6.js"></script>
+</body>
+</html>

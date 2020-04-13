@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">    
+    <title>Calculadora de prestamos</title>
+    <style>
+        #cargador,#resultados{
+            display: none;
+        }
+    </style>
+  </head>
+  <body class="bg-dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto ">
+                <div class="card mt-5">
+                    <div class="card-body text-center ">
+                        <h1 class="heading display-5 pb-3">Calculadora de prestamos</h1>
+                        <form action="" id="calpre">
+                            <div class="form-group">                                
+                                <div class="input-group">
+                                    <div class="input-group-prepend ">
+                                        <span class="input-group-text">$</span>
+                                    </div>
+                                    <input type="number" id="monto" class="form-control" placeholder="Monto del prestamo">
+                                </div>
+                                <div class="input-group mt-4">
+                                    <div class="input-group-prepend ">
+                                        <span class="input-group-text">%</span>
+                                    </div>
+                                    <input type="number" id="interes" class="form-control" placeholder="Interes">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="number" id="años" class="form-control" placeholder="años para pagar">
+                            </div>
+                            <div class="form-goup">
+                                <input type="submit" value="Calcular" class="btn btn-dark btn-block">
+                            </div>
+                        </form>
+
+                        <!-- Cargador -->
+                        <div id="cargador">
+                            <img src="img/spinner.gif" class="img-fluid" alt="Spinner">
+                        </div>
+
+                        <!-- cargar resultados -->
+                        <div id="resultados" class="pt-4">
+                            <h5>
+                                Resultados
+                            </h5>
+                            <div class="form-group">                                
+                                <div class="input-group">
+                                    <div class="input-group-prepend ">
+                                        <span class="input-group-text">Pago Mensual</span>
+                                    </div>
+                                    <input type="number" id="pago-mensual" disabled class="form-control" >
+                                </div>                                
+                            </div>
+                            <div class="form-group">                                
+                                <div class="input-group">
+                                    <div class="input-group-prepend ">
+                                        <span class="input-group-text">Pago Total</span>
+                                    </div>
+                                    <input type="number" id="pago-total" disabled class="form-control" >
+                                </div>                                
+                            </div>
+                            <div class="form-group">                                
+                                <div class="input-group">
+                                    <div class="input-group-prepend ">
+                                        <span class="input-group-text">Interes Total</span>
+                                    </div>
+                                    <input type="number" id="interes-total" disabled class="form-control" >
+                                </div>                                
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
