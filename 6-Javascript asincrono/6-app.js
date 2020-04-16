@@ -7,7 +7,7 @@ const posts=[
 se pasan como argumentos resolve y reject se usa resolve cuando todo en la funcion
 va como esperamos y reject cuando algo sale mal 
 */
-function crearPost(post,callback){
+function crearPost(post){
     return new Promise(function(resolve,reject){
         setTimeout(function(){
             posts.push(post);    
